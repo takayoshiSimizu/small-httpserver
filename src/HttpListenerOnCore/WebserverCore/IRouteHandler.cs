@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SimpleWebServer.WebServer
+namespace HttpListenerOnCore.WebserverCore
 {
     /// <summary>
     ///     Обработчки для маршрута

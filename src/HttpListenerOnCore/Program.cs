@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using SimpleWebServer.WebServer.HttpListener;
-using SimpleWebServer.WebServer;
-using SimpleWebServer.RouteHandlers;
+using HttpListenerOnCore.RouteHandlers;
+using HttpListenerOnCore.WebserverCore;
 
 namespace HttpListenerOnCore
 {
@@ -12,10 +8,12 @@ namespace HttpListenerOnCore
     {
         public static void Main(string[] args)
         {
-            var webServer = new WebServerOnHttpListener();
-            
-            webServer.Port = 5001;
-            webServer.Address = "localhost";
+            var webServer = new WebServerOnHttpListener
+            {
+                Port = 5001,
+                Address = "localhost"
+            };
+
 
             webServer.SetHandlerForRoute("^/$", HttpVerb.Get, new HelloWorldRouteHandler());        
 

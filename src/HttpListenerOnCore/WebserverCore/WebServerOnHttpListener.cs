@@ -6,9 +6,7 @@ using System.Net;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-using HttpListenerOnCore;
-
-namespace SimpleWebServer.WebServer.HttpListener
+namespace HttpListenerOnCore.WebserverCore
 {
     public class WebServerOnHttpListener 
     {        

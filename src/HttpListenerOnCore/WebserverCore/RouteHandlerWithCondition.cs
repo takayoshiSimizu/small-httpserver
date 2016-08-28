@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace SimpleWebServer.WebServer.HttpListener
+namespace HttpListenerOnCore.WebserverCore
 {
     public class RouteHandlerWithCondition
     {

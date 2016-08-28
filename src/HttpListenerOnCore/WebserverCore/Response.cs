@@ -1,4 +1,4 @@
-﻿namespace SimpleWebServer.WebServer
+﻿namespace HttpListenerOnCore.WebserverCore
 {
     /// <summary>
     ///     Ответ веб-сервера
